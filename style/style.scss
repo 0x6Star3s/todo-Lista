@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(214, 216, 230);
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  max-height: 550px;
+  background-color: rgba(12, 60, 234, 0.799);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+
+  .todo-input::placeholder {
+    color: #000000;
+  }
+
+  .todo-button.edit {
+    background: linear-gradient(90deg,
+        rgba(20, 159, 255, 1) 0%,
+        rgba(17, 122, 255, 1) 100%);
+    padding: 16px 22px;
+  }
+
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .todo-form {
+    margin: auto;
+    width: 80%;
+    padding: 1rem;
+    background-color: #dcdcdccf;
+    border-radius: 10px;
+
+    .todo-form-main {
+      display: flex;
+    }
+
+    .todo-info {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 800;
+      color: rgba(66, 66, 66, 0.765);
+    }
+
+  }
+
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+  }
+
+  // button
+  .cssbuttons-io-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    margin-left: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+
+  .add {
+    background-color: #8c54fd;
+  }
+
+  .uppdate {
+    background-color: #5d0cff;
+  }
+
+  //  ---------------------------------------
+
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .complete {
+      text-decoration: line-through;
+      opacity: 0.4;
+    }
+
+    .todo-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4px auto;
+      color: rgb(0, 0, 0);
+      background-color: #dcdcdccf;
+      padding: 16px;
+      border-radius: 5px;
+      width: 90%;
+    }
+
+    .icons {
+      background:none;
+      margin-left: .5rem;
+      width: 80px;
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 24px;
+      
+      .delete-icon {
+        border:none;
+        background-color: #fe003bea;
+        width: 40%;
+        padding: 0;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      .edit-icon {
+        border:none;
+        background-color: #123ce3;
+        width: 40%;
+        padding: 0;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.margin-top {
+  margin-top: 2rem;
+}

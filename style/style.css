@@ -1,0 +1,177 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: #d6d8e6;
+}
+
+.todo-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 520px;
+  max-height: 550px;
+  background-color: rgba(12, 60, 234, 0.799);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.todo-app .todo-input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.todo-app .todo-input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.todo-app .todo-input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.todo-app .todo-input::placeholder {
+  color: #000000;
+}
+
+.todo-app .todo-button.edit {
+  background: -webkit-gradient(linear, left top, right top, from(#149fff), to(#117aff));
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+  padding: 16px 22px;
+}
+
+.todo-app h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.todo-app .todo-form {
+  margin: auto;
+  width: 80%;
+  padding: 1rem;
+  background-color: #dcdcdccf;
+  border-radius: 10px;
+}
+
+.todo-app .todo-form .todo-form-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-app .todo-form .todo-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 800;
+  color: rgba(66, 66, 66, 0.765);
+}
+
+.todo-app .todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: black;
+}
+
+.todo-app .cssbuttons-io-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: .9rem;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  margin-left: 1rem;
+  color: white;
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.todo-app .add {
+  background-color: #8c54fd;
+}
+
+.todo-app .uppdate {
+  background-color: #5d0cff;
+}
+
+.todo-app .container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.todo-app .container::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-app .container .complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-app .container .todo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px auto;
+  color: black;
+  background-color: #dcdcdccf;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-app .container .icons {
+  background: none;
+  margin-left: .5rem;
+  width: 80px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 24px;
+}
+
+.todo-app .container .icons .delete-icon {
+  border: none;
+  background-color: #fe003bea;
+  width: 40%;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo-app .container .icons .edit-icon {
+  border: none;
+  background-color: #123ce3;
+  width: 40%;
+  padding: 0;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
